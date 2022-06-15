@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.java2110.springbootdemo14.mapper.UserMapper">
+    <update id="update">
+        update t_users set name = 'ls' where id = 7;
+    </update>
+
+    <select id="findUser" resultType="com.qf.java2110.springbootdemo14.pojo.User">
+        select * from t_users
+    </select>
+    <select id="finuser2" resultType="com.qf.java2110.springbootdemo14.pojo.User">
+        select id,name from t_users
+    </select>
+    <select id="select" resultType="com.qf.java2110.springbootdemo14.pojo.User">
+        select * from t_users where id = 7
+    </select>
+    <select id="selectId" resultType="com.qf.java2110.springbootdemo14.pojo.User">
+        select * from t_users where id = 7
+    </select>
+</mapper>
